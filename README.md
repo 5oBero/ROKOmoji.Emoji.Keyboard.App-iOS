@@ -27,7 +27,7 @@ Open workspace in Xcode.
 4. Fill Provisioning profiles fileds with info form yours Apple Developer Site.
 5. Add new key to your info.plist file. Key: ROKOMobiAPIToken, value: API key of your Portal application (see point 2 of previous paragraph)
 
-Apply steps 3-4 with Keyboard Extension.
+Apply steps 3-5 to Keyboard Extension target.
 
 ## Activate your new keyboard
 Run application on device or simulator and follow the instructions on the main screen.
