@@ -177,10 +177,6 @@ class KeyboardViewController: UIInputViewController {
     }
     
     fileprivate func configureStikers(){
-        ROKOComponentManager.shared().apiToken = kAPIToken
-        ROKOComponentManager.shared().baseURL = kBaseURL
-        
-        
         stickersPanel.delegate = self
         stickersPackPanel.delegate = self
         

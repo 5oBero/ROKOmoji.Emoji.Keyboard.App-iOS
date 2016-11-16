@@ -8,9 +8,6 @@
 
 import Foundation
 
-let kAPIToken = "LHkjx7wblhtBpUMg7dWymwC3xRf6DmkLnz7neIdKA/4="
-let kBaseURL = "api.roko.mobi/v1/"
-
 let kPressPasteTitleShowDuration = 2.5
 let kPressPasteTitleAppearDuration = 0.5
 let kGreetingText = "Check out the ROKOmojis Keyboard! "
