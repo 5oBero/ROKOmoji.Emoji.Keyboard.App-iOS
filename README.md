@@ -1,10 +1,10 @@
 # ROKOMoji
-Build your own iOS keyboard
+Build your own iOS custom keyboard
 
 ## About ROKOmoji
-Create your own custom keyboard with ROKO Labs! We've open sourced our emoji keyboard app so you can easily build your own emoji and sticker keyboard app so you can easily build your own emoji and sticker keyboard to promote your company and brand.
+Create your own custom keyboard with ROKO Labs! We've open sourced our emoji keyboard app so you can easily build your own emoji and sticker keyboard app to promote your company and brand.
 
-Once you've created your custom keyboard, you can choose whether or not you would like to integrate with ROKO Mobi's Sticker component to manage your keyboard and see analytics, all for free!
+The application is utilizing ROKO Mobi - http://roko.mobi - Stickers SDK to manage your keyboard and see analytics, all for free! 
 
 Should you have any questions or concerns, feel free to email us at help@rokolabs.com
 
