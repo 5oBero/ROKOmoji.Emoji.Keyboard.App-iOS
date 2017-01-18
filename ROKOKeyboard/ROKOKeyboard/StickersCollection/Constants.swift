@@ -10,7 +10,7 @@ import Foundation
 
 let kPressPasteTitleShowDuration = 2.5
 let kPressPasteTitleAppearDuration = 0.5
-let kGreetingText = "Check out the ROKOmojis Keyboard! "
+let kGreetingText = "Check out the ROKOmoji Keyboard! "
 let kAppLink = "www.roko.mobi"
 
 let kLastPackKey = "LastPackKey"
