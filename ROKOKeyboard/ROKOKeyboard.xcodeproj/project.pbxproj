@@ -184,7 +184,7 @@
 		8F2258341DB79396008854AC /* StickerPacksPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPacksPanel.swift; sourceTree = "<group>"; };
 		8F22583A1DB7940C008854AC /* StickersPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersPanel.swift; sourceTree = "<group>"; };
 		8F35DC5D1DB4F1A400412758 /* GothaProReg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothaProReg.otf; sourceTree = "<group>"; };
-		8F41164C1DAFB94900E59A37 /* ROKOmojis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ROKOmojis.entitlements; sourceTree = "<group>"; };
+		8F3E3C251E2F64A9006B007F /* ROKOmoji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ROKOmoji.entitlements; path = ../ROKOmoji.entitlements; sourceTree = "<group>"; };
 		8F42D7391DD5C3400066AC30 /* HelpPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpPageController.swift; sourceTree = "<group>"; };
 		8F42D73A1DD5C3400066AC30 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		8F4F92AB1DC769810007BCBF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -192,7 +192,6 @@
 		8F6EBDA11D081F5F0022E6A4 /* Keyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F6EBDA41D08480B0022E6A4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8F6EBDA71D085C940022E6A4 /* CopyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyboardManager.swift; sourceTree = "<group>"; };
-		8F6EBDBA1D0977790022E6A4 /* ROKOKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ROKOKeyboard.entitlements; sourceTree = "<group>"; };
 		8F6EBDBB1D0977A80022E6A4 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		8F89B7361DACF41E00025441 /* HelpControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpControllerFactory.swift; sourceTree = "<group>"; };
 		8F89B73F1DAD1D3200025441 /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
@@ -253,8 +252,6 @@
 		8FF6D40B1DCB7E09000270A8 /* Pack_1188767.packIcon_3941859901249773958.Stickers */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pack_1188767.packIcon_3941859901249773958.Stickers; sourceTree = "<group>"; };
 		8FF6D40C1DCB7E09000270A8 /* Pack_1188767.selectedPackIcon_2055947432137303685.Stickers */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pack_1188767.selectedPackIcon_2055947432137303685.Stickers; sourceTree = "<group>"; };
 		8FF6D40D1DCB7E09000270A8 /* StickersDataFile.Stickers */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StickersDataFile.Stickers; sourceTree = "<group>"; };
-		CCDC68DF9B201270FBCA240F /* Pods-ROKOmojis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmojis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmojis/Pods-ROKOmojis.debug.xcconfig"; sourceTree = "<group>"; };
-		E30F606BD329C22F1FD8FFAB /* Pods-ROKOmojis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmojis.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmojis/Pods-ROKOmojis.release.xcconfig"; sourceTree = "<group>"; };
 		F969847956C514F17B833E4E /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,7 +318,6 @@
 			isa = PBXGroup;
 			children = (
 				8FF6D3E21DCB7E09000270A8 /* WarmCache */,
-				8F41164C1DAFB94900E59A37 /* ROKOmojis.entitlements */,
 				8F22582F1DB79396008854AC /* StickersCollection */,
 				8F9DD65E1D05A9AE0079CB1D /* ROKOKeyboard */,
 				8F9DD6761D05AB250079CB1D /* Keyboard */,
@@ -345,7 +341,7 @@
 		8F9DD65E1D05A9AE0079CB1D /* ROKOKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				8F6EBDBA1D0977790022E6A4 /* ROKOKeyboard.entitlements */,
+				8F3E3C251E2F64A9006B007F /* ROKOmoji.entitlements */,
 				8F9DD65F1D05A9AE0079CB1D /* AppDelegate.swift */,
 				8F9DD6631D05A9AE0079CB1D /* Main.storyboard */,
 				8F89B7361DACF41E00025441 /* HelpControllerFactory.swift */,
@@ -437,8 +433,6 @@
 			children = (
 				F969847956C514F17B833E4E /* Pods-Keyboard.debug.xcconfig */,
 				138960C3A911C0D55400386B /* Pods-Keyboard.release.xcconfig */,
-				CCDC68DF9B201270FBCA240F /* Pods-ROKOmojis.debug.xcconfig */,
-				E30F606BD329C22F1FD8FFAB /* Pods-ROKOmojis.release.xcconfig */,
 				290AB65F7AA6F58244C0D36F /* Pods-ROKOmoji.debug.xcconfig */,
 				3BAA6197D7F84644FC06903B /* Pods-ROKOmoji.release.xcconfig */,
 			);
@@ -965,7 +959,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ROKOmojis.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ROKOmoji.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8UDWX3Z26Y;
@@ -989,7 +983,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ROKOmojis.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ROKOmoji.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: CarryQuote, Inc.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 8UDWX3Z26Y;

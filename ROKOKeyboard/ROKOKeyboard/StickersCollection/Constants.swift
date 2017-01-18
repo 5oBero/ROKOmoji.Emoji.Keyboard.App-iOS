@@ -11,7 +11,9 @@ import Foundation
 let kPressPasteTitleShowDuration = 2.5
 let kPressPasteTitleAppearDuration = 0.5
 let kGreetingText = "Check out the ROKOmoji Keyboard! "
-let kAppLink = "www.roko.mobi"
+let kAppLink = "https://rokomoji.rkm.io/rkmo"
+let kLinkName = "iOS Keyboard Share"
+let kLinkChannelName = "iOS Keyboard Share"
 
 let kLastPackKey = "LastPackKey"
 

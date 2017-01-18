@@ -24,7 +24,6 @@ class KeyboardViewController: UIInputViewController {
     var dataSource: ROKOPortalStickersDataSource!
     var stickersDataProvider = StickersDataProvider()
     var guid = NSUUID().uuidString
-    var deepLink: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,19 +48,6 @@ class KeyboardViewController: UIInputViewController {
     override func viewWillAppear(_ animated: Bool) {
         guid = NSUUID().uuidString
         ROKOStickers.logEnteredStickersPanel()
-        
-        if (deepLink == nil) {
-            // We create Refferal link.
-            let manager = ROKOLinkManager()
-            manager.createLink(withName: nil, type: .share, sourceURL: nil, channelName: nil, sharingCode: nil, advancedSettings: nil, completionBlock: {
-                [weak self] linkURL, linkId, error in
-                if error == nil, let url = linkURL{
-                    self?.deepLink = url
-                }
-            })
-        }
-        
-        
         stickersPackPanel.scrollTo()
     }
     
@@ -114,8 +100,14 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func clickShare(_ sender: AnyObject) {
-        let link = deepLink ?? kAppLink
-        self.textDocumentProxy.insertText(kGreetingText + link)
+        ROKOLinkManager().createLink(withName: kLinkName, type: .share, sourceURL: nil, channelName: kLinkChannelName, sharingCode: nil, advancedSettings: nil, completionBlock: {
+            [weak self] linkURL, linkId, error in
+            if error == nil, let url = linkURL{
+                self?.textDocumentProxy.insertText(kGreetingText + url)
+            } else {
+                self?.textDocumentProxy.insertText(kGreetingText + kAppLink)
+            }
+        })
         
         ROKOStickers.logSharedImage(withId: self.guid)
     }
