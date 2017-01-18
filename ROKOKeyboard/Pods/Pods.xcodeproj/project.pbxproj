@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9C631CF00D28DB3B00CA6FF2B4FD71 /* Pods-Keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F09DF705E98818D2F885FE83FBEA58E /* Pods-Keyboard-dummy.m */; };
-		3E29F0D86B7089561734C593DD10EEAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		0B9C631CF00D28DB3B00CA6FF2B4FD71 /* Pods-Keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860972ED7F17607FCDF278E28AC1023 /* Pods-Keyboard-dummy.m */; };
+		1D0E2CF897A3FE68DD0D50D4CC46C5CF /* Pods-ROKOmoji-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A1E5D3A9DF6C83C6ECB9F44C053436 /* Pods-ROKOmoji-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B3BA3E2DD84EF2D33B3B38ABF13C74C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		8DC9825A5CD0EE0F27B7FDA3A4436101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9D0E0EF5061141A04EC386EDAA2167A5 /* Pods-ROKOmojis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B8C743ECEAD7210AC9DA4A118F33A3 /* Pods-ROKOmojis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC7781010722211CE8AA6D712A691E5A /* Pods-Keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C6154A2A3139FF91C9748620C8530E /* Pods-Keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBF4A15202ADD608057D2AF823DA4AA8 /* Pods-ROKOmojis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFC317574C42BD49FF619E5F3525F0E /* Pods-ROKOmojis-dummy.m */; };
+		AC7781010722211CE8AA6D712A691E5A /* Pods-Keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0156F8F231779D17C37AF970AAD77B41 /* Pods-Keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB98C0BAF10CAFE1EEC12EA147F74C55 /* Pods-ROKOmoji-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7436B0721B5B1C3A5036D0723BCF125 /* Pods-ROKOmoji-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0439223E77DEBB60D5753F9711972E8A /* Pods-ROKOmojis-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ROKOmojis-frameworks.sh"; sourceTree = "<group>"; };
-		126CBBB8F3025A29C2E11BEF81DF5E1E /* Pods-ROKOmojis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ROKOmojis.modulemap"; sourceTree = "<group>"; };
-		16535D5A1ACD1636DFEA49B5D318F81F /* Pods-ROKOmojis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ROKOmojis.debug.xcconfig"; sourceTree = "<group>"; };
-		185046B20A380ABA739A1FAF9F6CA7B5 /* Pods-Keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Keyboard-resources.sh"; sourceTree = "<group>"; };
-		2E0D4ABCDADE9EA38D46E01180A352A6 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4383CC332C04A3B7BE1B7C8E4C10F6EB /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
-		50837C8999DABD9CB625510E3F7FB7DD /* Pods-ROKOmojis-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ROKOmojis-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56BBE0872AD99CEFCA6E40AB0C1E77FD /* Pods-Keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5E211C43DA4A28DE2203C82BA2CBFB84 /* Pods-ROKOmojis-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ROKOmojis-resources.sh"; sourceTree = "<group>"; };
-		5F09DF705E98818D2F885FE83FBEA58E /* Pods-Keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Keyboard-dummy.m"; sourceTree = "<group>"; };
-		83CDDA59EE4947172D5ED535A4E9651E /* Pods-Keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		83E69BABBCD622495C38E3DD8F18F8FE /* Pods-Keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Keyboard.modulemap"; sourceTree = "<group>"; };
+		0134447791022CB49939527EA785C5DD /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		0156F8F231779D17C37AF970AAD77B41 /* Pods-Keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Keyboard-umbrella.h"; sourceTree = "<group>"; };
+		07C093217E1C3CA25AD919846370AE48 /* Pods-ROKOmoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ROKOmoji.debug.xcconfig"; sourceTree = "<group>"; };
+		0B500B3740F3987BFB309D2BFDE9812A /* Pods-ROKOmoji-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ROKOmoji-acknowledgements.plist"; sourceTree = "<group>"; };
+		158C481CBCCD14FAD46E5B2627F3E7A3 /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		27A1E5D3A9DF6C83C6ECB9F44C053436 /* Pods-ROKOmoji-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ROKOmoji-umbrella.h"; sourceTree = "<group>"; };
+		2C946C71FB9830A1FFCD9AD6E4DAB1F2 /* Pods-ROKOmoji.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ROKOmoji.modulemap"; sourceTree = "<group>"; };
+		3333469ED4845C983A542B3D09803017 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3860972ED7F17607FCDF278E28AC1023 /* Pods-Keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Keyboard-dummy.m"; sourceTree = "<group>"; };
+		3AC883A1E2A0DDA35ACA16FD15622BE0 /* Pods-ROKOmoji-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ROKOmoji-frameworks.sh"; sourceTree = "<group>"; };
+		3D0610C8ED1EC72B3A6B08C5C8ADA1A1 /* Pods-Keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		766742B950B7D3460F7754579CD35CD4 /* Pods-Keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		822CEE2034781657C3BC9C705ABD9D77 /* Pods-Keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Keyboard.modulemap"; sourceTree = "<group>"; };
+		8F066CE860E716AFE51255AD9957EDC2 /* Pods-ROKOmoji-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ROKOmoji-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B8C743ECEAD7210AC9DA4A118F33A3 /* Pods-ROKOmojis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ROKOmojis-umbrella.h"; sourceTree = "<group>"; };
-		968C2C9D02495DE2D3344A7A20FCADD6 /* Pods_ROKOmojis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROKOmojis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCFC317574C42BD49FF619E5F3525F0E /* Pods-ROKOmojis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ROKOmojis-dummy.m"; sourceTree = "<group>"; };
-		C45FB92A912CC65A2DF1ABE7B1B1D703 /* Pods-ROKOmojis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ROKOmojis.release.xcconfig"; sourceTree = "<group>"; };
+		93BEF1F272A40BEA826035DD3383FE30 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB99EB7010F9F9F0A942B8DDFE393BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6828ED705B622F852CE6A512010C77A /* Pods-Keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Keyboard-resources.sh"; sourceTree = "<group>"; };
+		CB33182234415BAF1C7E032FC79F9ED7 /* Pods-ROKOmoji-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ROKOmoji-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC1B270D6359E70CCAFCF0630D266C7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96687ED12D4C1B1EC69776DE50BFBA3 /* Pods-ROKOmoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ROKOmoji.release.xcconfig"; sourceTree = "<group>"; };
 		DC2C8F146784CAC128DDF4F718E7A291 /* ROKOMobi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ROKOMobi.framework; path = Framework/ROKOMobi.framework; sourceTree = "<group>"; };
-		DC554DD288E0D514DE942EE301C7B965 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF6BF570288575DAFDCAEC5F67C597CF /* ROKOMobiResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ROKOMobiResources.bundle; path = Framework/ROKOMobi.framework/ROKOMobiResources.bundle; sourceTree = "<group>"; };
-		E1C6154A2A3139FF91C9748620C8530E /* Pods-Keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Keyboard-umbrella.h"; sourceTree = "<group>"; };
-		E7E3CE0CCC196CE9F0BFE0ABEA98F41E /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		F958F3163573D7B1AFBF2E65DEA28199 /* Pods-ROKOmojis-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ROKOmojis-acknowledgements.plist"; sourceTree = "<group>"; };
+		E695B11B06EF1751F36577FF839BE1A0 /* Pods_ROKOmoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROKOmoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7436B0721B5B1C3A5036D0723BCF125 /* Pods-ROKOmoji-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ROKOmoji-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,40 +52,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47C6167AFE13AB3EF3CD2D28B5F73915 /* Frameworks */ = {
+		F19DF2D5EA0477EED5A873D1BDDA7C69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E29F0D86B7089561734C593DD10EEAF /* Foundation.framework in Frameworks */,
+				2B3BA3E2DD84EF2D33B3B38ABF13C74C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		096A699CC524500D9A7E5F5911C97A8B /* Pods-Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				DC554DD288E0D514DE942EE301C7B965 /* Info.plist */,
-				83E69BABBCD622495C38E3DD8F18F8FE /* Pods-Keyboard.modulemap */,
-				56BBE0872AD99CEFCA6E40AB0C1E77FD /* Pods-Keyboard-acknowledgements.markdown */,
-				83CDDA59EE4947172D5ED535A4E9651E /* Pods-Keyboard-acknowledgements.plist */,
-				5F09DF705E98818D2F885FE83FBEA58E /* Pods-Keyboard-dummy.m */,
-				185046B20A380ABA739A1FAF9F6CA7B5 /* Pods-Keyboard-resources.sh */,
-				E1C6154A2A3139FF91C9748620C8530E /* Pods-Keyboard-umbrella.h */,
-				E7E3CE0CCC196CE9F0BFE0ABEA98F41E /* Pods-Keyboard.debug.xcconfig */,
-				4383CC332C04A3B7BE1B7C8E4C10F6EB /* Pods-Keyboard.release.xcconfig */,
-			);
-			name = "Pods-Keyboard";
-			path = "Target Support Files/Pods-Keyboard";
-			sourceTree = "<group>";
-		};
 		09EA270C153D4280B7D945F051FD17AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				F7A74FF08A9BDA546839F08DF70FE85D /* ROKO.Mobi */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		229C8E9CBF0E4C9B5B3B3FAF90EEB544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93BEF1F272A40BEA826035DD3383FE30 /* Pods_Keyboard.framework */,
+				E695B11B06EF1751F36577FF839BE1A0 /* Pods_ROKOmoji.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29E8F8E2AC01504F29691E4D645241B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60BF50EB258DB83B90E77007626A4C15 /* Pods-Keyboard */,
+				DEFC082F52DAE79A46B4AFE848D65BD2 /* Pods-ROKOmoji */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		384CD68526D6A1E096D58EA3C565F648 /* Resources */ = {
@@ -112,24 +113,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		60BF50EB258DB83B90E77007626A4C15 /* Pods-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3333469ED4845C983A542B3D09803017 /* Info.plist */,
+				822CEE2034781657C3BC9C705ABD9D77 /* Pods-Keyboard.modulemap */,
+				3D0610C8ED1EC72B3A6B08C5C8ADA1A1 /* Pods-Keyboard-acknowledgements.markdown */,
+				766742B950B7D3460F7754579CD35CD4 /* Pods-Keyboard-acknowledgements.plist */,
+				3860972ED7F17607FCDF278E28AC1023 /* Pods-Keyboard-dummy.m */,
+				A6828ED705B622F852CE6A512010C77A /* Pods-Keyboard-resources.sh */,
+				0156F8F231779D17C37AF970AAD77B41 /* Pods-Keyboard-umbrella.h */,
+				158C481CBCCD14FAD46E5B2627F3E7A3 /* Pods-Keyboard.debug.xcconfig */,
+				0134447791022CB49939527EA785C5DD /* Pods-Keyboard.release.xcconfig */,
+			);
+			name = "Pods-Keyboard";
+			path = "Target Support Files/Pods-Keyboard";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				09EA270C153D4280B7D945F051FD17AA /* Pods */,
-				C342F585164C5D6AD2CF3B784FDF32DA /* Products */,
-				AA67A4BD61AFC0423AB1E713AC561CA4 /* Targets Support Files */,
+				229C8E9CBF0E4C9B5B3B3FAF90EEB544 /* Products */,
+				29E8F8E2AC01504F29691E4D645241B1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		AA67A4BD61AFC0423AB1E713AC561CA4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				096A699CC524500D9A7E5F5911C97A8B /* Pods-Keyboard */,
-				E1371BE31368EC4B2B122E3FA97A8DC5 /* Pods-ROKOmojis */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -140,31 +149,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C342F585164C5D6AD2CF3B784FDF32DA /* Products */ = {
+		DEFC082F52DAE79A46B4AFE848D65BD2 /* Pods-ROKOmoji */ = {
 			isa = PBXGroup;
 			children = (
-				2E0D4ABCDADE9EA38D46E01180A352A6 /* Pods_Keyboard.framework */,
-				968C2C9D02495DE2D3344A7A20FCADD6 /* Pods_ROKOmojis.framework */,
+				9AB99EB7010F9F9F0A942B8DDFE393BE /* Info.plist */,
+				2C946C71FB9830A1FFCD9AD6E4DAB1F2 /* Pods-ROKOmoji.modulemap */,
+				CB33182234415BAF1C7E032FC79F9ED7 /* Pods-ROKOmoji-acknowledgements.markdown */,
+				0B500B3740F3987BFB309D2BFDE9812A /* Pods-ROKOmoji-acknowledgements.plist */,
+				E7436B0721B5B1C3A5036D0723BCF125 /* Pods-ROKOmoji-dummy.m */,
+				3AC883A1E2A0DDA35ACA16FD15622BE0 /* Pods-ROKOmoji-frameworks.sh */,
+				8F066CE860E716AFE51255AD9957EDC2 /* Pods-ROKOmoji-resources.sh */,
+				27A1E5D3A9DF6C83C6ECB9F44C053436 /* Pods-ROKOmoji-umbrella.h */,
+				07C093217E1C3CA25AD919846370AE48 /* Pods-ROKOmoji.debug.xcconfig */,
+				D96687ED12D4C1B1EC69776DE50BFBA3 /* Pods-ROKOmoji.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E1371BE31368EC4B2B122E3FA97A8DC5 /* Pods-ROKOmojis */ = {
-			isa = PBXGroup;
-			children = (
-				DC1B270D6359E70CCAFCF0630D266C7A /* Info.plist */,
-				126CBBB8F3025A29C2E11BEF81DF5E1E /* Pods-ROKOmojis.modulemap */,
-				50837C8999DABD9CB625510E3F7FB7DD /* Pods-ROKOmojis-acknowledgements.markdown */,
-				F958F3163573D7B1AFBF2E65DEA28199 /* Pods-ROKOmojis-acknowledgements.plist */,
-				BCFC317574C42BD49FF619E5F3525F0E /* Pods-ROKOmojis-dummy.m */,
-				0439223E77DEBB60D5753F9711972E8A /* Pods-ROKOmojis-frameworks.sh */,
-				5E211C43DA4A28DE2203C82BA2CBFB84 /* Pods-ROKOmojis-resources.sh */,
-				93B8C743ECEAD7210AC9DA4A118F33A3 /* Pods-ROKOmojis-umbrella.h */,
-				16535D5A1ACD1636DFEA49B5D318F81F /* Pods-ROKOmojis.debug.xcconfig */,
-				C45FB92A912CC65A2DF1ABE7B1B1D703 /* Pods-ROKOmojis.release.xcconfig */,
-			);
-			name = "Pods-ROKOmojis";
-			path = "Target Support Files/Pods-ROKOmojis";
+			name = "Pods-ROKOmoji";
+			path = "Target Support Files/Pods-ROKOmoji";
 			sourceTree = "<group>";
 		};
 		F7A74FF08A9BDA546839F08DF70FE85D /* ROKO.Mobi */ = {
@@ -187,32 +187,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC272E0C7B57A966B9912903B554E6B5 /* Headers */ = {
+		BF6D39E2F2E7A0E35CC2E08C6F14F343 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0E0EF5061141A04EC386EDAA2167A5 /* Pods-ROKOmojis-umbrella.h in Headers */,
+				1D0E2CF897A3FE68DD0D50D4CC46C5CF /* Pods-ROKOmoji-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		616EB38A9EF01CC67CA9EFD61B5FD295 /* Pods-ROKOmojis */ = {
+		52254E0BAC8FBD5D4FDFA23A269D98DF /* Pods-ROKOmoji */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 078E519B9093BBBB57A991414944F62F /* Build configuration list for PBXNativeTarget "Pods-ROKOmojis" */;
+			buildConfigurationList = 2BD855F87039670377D27C1609298CFB /* Build configuration list for PBXNativeTarget "Pods-ROKOmoji" */;
 			buildPhases = (
-				5F5FC4207E294EB64C4A2210E05C8804 /* Sources */,
-				47C6167AFE13AB3EF3CD2D28B5F73915 /* Frameworks */,
-				CC272E0C7B57A966B9912903B554E6B5 /* Headers */,
+				3EE2D0888D5C3C7F3B14CB9855E686F6 /* Sources */,
+				F19DF2D5EA0477EED5A873D1BDDA7C69 /* Frameworks */,
+				BF6D39E2F2E7A0E35CC2E08C6F14F343 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ROKOmojis";
-			productName = "Pods-ROKOmojis";
-			productReference = 968C2C9D02495DE2D3344A7A20FCADD6 /* Pods_ROKOmojis.framework */;
+			name = "Pods-ROKOmoji";
+			productName = "Pods-ROKOmoji";
+			productReference = E695B11B06EF1751F36577FF839BE1A0 /* Pods_ROKOmoji.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7C8964913B8AC7CD823A4765CD0684EC /* Pods-Keyboard */ = {
@@ -229,7 +229,7 @@
 			);
 			name = "Pods-Keyboard";
 			productName = "Pods-Keyboard";
-			productReference = 2E0D4ABCDADE9EA38D46E01180A352A6 /* Pods_Keyboard.framework */;
+			productReference = 93BEF1F272A40BEA826035DD3383FE30 /* Pods_Keyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -249,22 +249,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C342F585164C5D6AD2CF3B784FDF32DA /* Products */;
+			productRefGroup = 229C8E9CBF0E4C9B5B3B3FAF90EEB544 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7C8964913B8AC7CD823A4765CD0684EC /* Pods-Keyboard */,
-				616EB38A9EF01CC67CA9EFD61B5FD295 /* Pods-ROKOmojis */,
+				52254E0BAC8FBD5D4FDFA23A269D98DF /* Pods-ROKOmoji */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5F5FC4207E294EB64C4A2210E05C8804 /* Sources */ = {
+		3EE2D0888D5C3C7F3B14CB9855E686F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF4A15202ADD608057D2AF823DA4AA8 /* Pods-ROKOmojis-dummy.m in Sources */,
+				DB98C0BAF10CAFE1EEC12EA147F74C55 /* Pods-ROKOmoji-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +279,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1972DEB5A7508E5BB2AED540CF7D27FA /* Release */ = {
+		06C45020919EED4F1662351F132DEFA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C45FB92A912CC65A2DF1ABE7B1B1D703 /* Pods-ROKOmojis.release.xcconfig */;
+			baseConfigurationReference = D96687ED12D4C1B1EC69776DE50BFBA3 /* Pods-ROKOmoji.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -294,18 +294,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ROKOmojis/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ROKOmoji/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ROKOmojis/Pods-ROKOmojis.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ROKOmojis;
+				PRODUCT_NAME = Pods_ROKOmoji;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +313,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		4DF5FBF48181F0BF819B29D60BC26C52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C093217E1C3CA25AD919846370AE48 /* Pods-ROKOmoji.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ROKOmoji/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ROKOmoji;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -358,41 +393,6 @@
 			};
 			name = Debug;
 		};
-		8CD413180A37AA252B8E1E109144FE9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16535D5A1ACD1636DFEA49B5D318F81F /* Pods-ROKOmojis.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ROKOmojis/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ROKOmojis/Pods-ROKOmojis.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ROKOmojis;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,7 +435,7 @@
 		};
 		C93E10C27E0440FB46042C3F579AA4E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4383CC332C04A3B7BE1B7C8E4C10F6EB /* Pods-Keyboard.release.xcconfig */;
+			baseConfigurationReference = 0134447791022CB49939527EA785C5DD /* Pods-Keyboard.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -471,7 +471,7 @@
 		};
 		D09E51394847E3A8058B48D042105780 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7E3CE0CCC196CE9F0BFE0ABEA98F41E /* Pods-Keyboard.debug.xcconfig */;
+			baseConfigurationReference = 158C481CBCCD14FAD46E5B2627F3E7A3 /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -508,11 +508,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		078E519B9093BBBB57A991414944F62F /* Build configuration list for PBXNativeTarget "Pods-ROKOmojis" */ = {
+		2BD855F87039670377D27C1609298CFB /* Build configuration list for PBXNativeTarget "Pods-ROKOmoji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CD413180A37AA252B8E1E109144FE9C /* Debug */,
-				1972DEB5A7508E5BB2AED540CF7D27FA /* Release */,
+				4DF5FBF48181F0BF819B29D60BC26C52 /* Debug */,
+				06C45020919EED4F1662351F132DEFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

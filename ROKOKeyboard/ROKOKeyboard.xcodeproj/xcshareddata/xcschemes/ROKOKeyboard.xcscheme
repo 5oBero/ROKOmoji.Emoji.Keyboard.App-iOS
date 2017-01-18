@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F9DD65B1D05A9AE0079CB1D"
-               BuildableName = "ROKOmojis.app"
-               BlueprintName = "ROKOmojis"
+               BuildableName = "ROKOmoji.app"
+               BlueprintName = "ROKOmoji"
                ReferencedContainer = "container:ROKOKeyboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9DD65B1D05A9AE0079CB1D"
-            BuildableName = "ROKOmojis.app"
-            BlueprintName = "ROKOmojis"
+            BuildableName = "ROKOmoji.app"
+            BlueprintName = "ROKOmoji"
             ReferencedContainer = "container:ROKOKeyboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9DD65B1D05A9AE0079CB1D"
-            BuildableName = "ROKOmojis.app"
-            BlueprintName = "ROKOmojis"
+            BuildableName = "ROKOmoji.app"
+            BlueprintName = "ROKOmoji"
             ReferencedContainer = "container:ROKOKeyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F9DD65B1D05A9AE0079CB1D"
-            BuildableName = "ROKOmojis.app"
-            BlueprintName = "ROKOmojis"
+            BuildableName = "ROKOmoji.app"
+            BlueprintName = "ROKOmoji"
             ReferencedContainer = "container:ROKOKeyboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -104,8 +104,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "8F9DD65B1D05A9AE0079CB1D"
-                     BuildableName = "ROKOmojis.app"
-                     BlueprintName = "ROKOmojis"
+                     BuildableName = "ROKOmoji.app"
+                     BlueprintName = "ROKOmoji"
                      ReferencedContainer = "container:ROKOKeyboard.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>

@@ -2,16 +2,14 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-target 'ROKOmojis' do
+target 'ROKOmoji' do
 
-# pod 'frmtst'
 pod 'ROKO.Mobi'
 
 end
 
 target 'Keyboard' do
 
-# pod 'frmtst'
 pod 'ROKO.Mobi'
 
 end

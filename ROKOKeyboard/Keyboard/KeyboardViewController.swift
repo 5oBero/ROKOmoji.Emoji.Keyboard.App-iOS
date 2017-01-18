@@ -257,7 +257,7 @@ extension KeyboardViewController: StickersPanelDelegate {
             item.stickerId = stickerInfo.objectId as Int
             item.stickerPackId = pack.objectId as Int
             item.stickerPackName = pack.name
-            ROKOStickers.logSaving(withStickers: [item], onImageWithId: guid)
+            ROKOStickers.logSaving(withStickers: [item], onImageWithId: guid, fromCamera: false)
             showHint()
         }
     }
