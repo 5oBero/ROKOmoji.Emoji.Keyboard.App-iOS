@@ -108,7 +108,7 @@
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
 	<key>ROKOMobiAPIToken</key>
-	<string>LHkjx7wblhtBpUMg7dWymwC3xRf6DmkLnz7neIdKA/4=</string>
+	<string>PUT_YOUR_KEY_HERE</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SF-UI-Text-Bold.otf</string>
