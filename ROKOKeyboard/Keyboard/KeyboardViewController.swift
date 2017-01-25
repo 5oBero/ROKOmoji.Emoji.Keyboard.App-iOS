@@ -16,14 +16,13 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var labelInfo: UILabel!
     @IBOutlet weak var buttonDelete: UIButton!
     
-    var longPress: UILongPressGestureRecognizer!
-    
     @IBOutlet weak var stickersPanel: StickersPanel!
     @IBOutlet weak var stickersPackPanel: StickerPacksPanel!
     
     var dataSource: ROKOPortalStickersDataSource!
     var stickersDataProvider = StickersDataProvider()
     var guid = NSUUID().uuidString
+    private var deleteButtonTimer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +36,11 @@ class KeyboardViewController: UIInputViewController {
         hintView.isHidden = true
         configuteHintButton()
         
-        longPress = UILongPressGestureRecognizer(target: self, action: #selector(KeyboardViewController.handleLongPress(_:)))
-        longPress.minimumPressDuration = 0.5
-        longPress.numberOfTouchesRequired = 1
-        longPress.allowableMovement = 44.0
+        buttonDelete.addTarget(self, action: #selector(KeyboardViewController.deleteButtonPressed), for: .touchUpInside)
         
-        buttonDelete.addGestureRecognizer(longPress)
+        let deleteButtonLongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(KeyboardViewController.handleLongPressForDeleteButtonWithGestureRecognizer))
+        buttonDelete.addGestureRecognizer(deleteButtonLongPressGestureRecognizer)
+        buttonDelete.addGestureRecognizer(deleteButtonLongPressGestureRecognizer)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,7 +78,8 @@ class KeyboardViewController: UIInputViewController {
         
         stickersPanel.removeFromSuperview()
         stickersPackPanel.removeFromSuperview()
-        buttonDelete.removeGestureRecognizer(longPress)
+        
+//        deleteButton.removeGestureRecognizer(longPress) // TODO: check it
         
         dataSource = nil
         stickersDataProvider.stickerPacks?.removeAll()
@@ -112,17 +111,7 @@ class KeyboardViewController: UIInputViewController {
         ROKOStickers.logSharedImage(withId: self.guid)
     }
     
-    @IBAction func clickDelete(_ sender: AnyObject) {
-        deleteSimbolOnTextEdit()
-    }
-    
-    func handleLongPress(_ gestureRecognizer: UIGestureRecognizer) {
-        deleteSimbolOnTextEdit()
-    }
-    
-    fileprivate func deleteSimbolOnTextEdit(){
-        textDocumentProxy.deleteBackward()
-    }
+
     
     fileprivate func loadKeyboard(){
         Bundle.main.loadNibNamed("KeyboardViewController", owner: self, options: nil)
@@ -228,6 +217,38 @@ class KeyboardViewController: UIInputViewController {
             }, completion: nil)
         })
     }
+    
+    // MARK: - Delete button handling
+    func deleteButtonPressed(sender: AnyObject) {
+        switch textDocumentProxy.documentContextBeforeInput {
+        case let s where s?.hasSuffix("    ") == true: // Cursor in front of tab, so delete tab.
+            for _ in 0..<4 { // TODO: Update to use tab setting.
+                textDocumentProxy.deleteBackward()
+            }
+        default:
+            textDocumentProxy.deleteBackward()
+        }
+
+    }
+    
+    func handleLongPressForDeleteButtonWithGestureRecognizer(gestureRecognizer: UILongPressGestureRecognizer) {
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            if deleteButtonTimer == nil {
+                deleteButtonTimer = Timer(timeInterval: 0.1, target: self, selector: #selector(KeyboardViewController.handleDeleteButtonTimerTick), userInfo: nil, repeats: true)
+                deleteButtonTimer!.tolerance = 0.01
+                RunLoop.main.add(deleteButtonTimer!, forMode: RunLoopMode.defaultRunLoopMode)
+            }
+        default:
+            deleteButtonTimer?.invalidate()
+            deleteButtonTimer = nil
+        }
+    }
+    
+    func handleDeleteButtonTimerTick(timer: Timer) {
+        textDocumentProxy.deleteBackward()
+    }
+    
 }
 
 extension KeyboardViewController: StickersPanelDelegate {
