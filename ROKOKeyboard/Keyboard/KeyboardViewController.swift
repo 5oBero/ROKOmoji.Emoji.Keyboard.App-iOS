@@ -19,10 +19,11 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet weak var stickersPanel: StickersPanel!
     @IBOutlet weak var stickersPackPanel: StickerPacksPanel!
     
-    var dataSource: ROKOPortalStickersDataSource!
-    var stickersDataProvider = StickersDataProvider()
-    var guid = NSUUID().uuidString
+    private var dataSource: ROKOPortalStickersDataSource!
+    fileprivate var stickersDataProvider = StickersDataProvider()
+    fileprivate var guid = NSUUID().uuidString
     private var deleteButtonTimer: Timer?
+    private var deleteCharactersCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,7 +80,7 @@ class KeyboardViewController: UIInputViewController {
         stickersPanel.removeFromSuperview()
         stickersPackPanel.removeFromSuperview()
         
-//        deleteButton.removeGestureRecognizer(longPress) // TODO: check it
+        //        deleteButton.removeGestureRecognizer(longPress) // TODO: check it
         
         dataSource = nil
         stickersDataProvider.stickerPacks?.removeAll()
@@ -110,8 +111,6 @@ class KeyboardViewController: UIInputViewController {
         
         ROKOStickers.logSharedImage(withId: self.guid)
     }
-    
-
     
     fileprivate func loadKeyboard(){
         Bundle.main.loadNibNamed("KeyboardViewController", owner: self, options: nil)
@@ -228,7 +227,7 @@ class KeyboardViewController: UIInputViewController {
         default:
             textDocumentProxy.deleteBackward()
         }
-
+        
     }
     
     func handleLongPressForDeleteButtonWithGestureRecognizer(gestureRecognizer: UILongPressGestureRecognizer) {
@@ -242,11 +241,27 @@ class KeyboardViewController: UIInputViewController {
         default:
             deleteButtonTimer?.invalidate()
             deleteButtonTimer = nil
+            deleteCharactersCount = 0
         }
     }
     
     func handleDeleteButtonTimerTick(timer: Timer) {
-        textDocumentProxy.deleteBackward()
+        var charactersToDelete = 1
+        defer {
+            for _ in 0..<charactersToDelete {
+                textDocumentProxy.deleteBackward()
+            }
+            deleteCharactersCount += 1
+        }
+        
+        if deleteCharactersCount > 5 {
+            if let documentContextBeforeInput = textDocumentProxy.documentContextBeforeInput as NSString? {
+                let range = documentContextBeforeInput.rangeOfCharacter(from: CharacterSet.whitespaces, options: .backwards)
+                if range.location != NSNotFound {
+                    charactersToDelete = documentContextBeforeInput.length - range.location
+                }
+            }
+        }
     }
     
 }
