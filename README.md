@@ -18,6 +18,8 @@ No need to spend time creating features from scratch or paying for a developer. 
 
 Want to see these features in action? Then check out ROKOmoji in the iTunes App Store.
 
+ROKOmoji - https://itunes.apple.com/us/app/rokomoji/id1172504178?mt=8
+
 ## Xcode Project Settings
 Open workspace in Xcode:
 
