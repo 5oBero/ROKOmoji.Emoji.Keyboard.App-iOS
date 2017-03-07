@@ -1,12 +1,22 @@
-# ROKOMoji
-Build your own iOS custom keyboard
+# ROKOmoji Emoji Keyboard App (iOS)
+Create your own Custom Emoji Keyboard App for free with ROKO Labs! We've open sourced our emoji keyboard app you can easily build your own to promote your company and brand!
 
-## About ROKOmoji
-Create your own custom keyboard with ROKO Labs! We've open sourced our emoji keyboard app so you can easily build your own emoji and sticker keyboard app to promote your company and brand.
+The application also utilizes ROKO Mobi Stickers SDK - http://roko.mobi/stickers - which will help you manage your app through:
 
-The application is utilizing ROKO Mobi - http://roko.mobi - Stickers SDK to manage your keyboard and see analytics, all for free! 
+1. In-depth sticker analytics and reporting
+2. Upload and send stickers and GIFS straight to your emoji keyboard app w/o submitting another build to Apple 
+3. It's all free!
 
-Should you have any questions or concerns, feel free to email us at help@rokolabs.com
+## Custom Keyboard App Features
+No need to spend time creating features from scratch or paying for a developer. Our open-sourced app includes multiple types of custom app features.
+
+1. Multiple sticker packs supported within one app
+2. User onboarding experience in app
+3. Logo branding
+4. Static and animated stickers
+5. Stickers can be sent in email, messenger, SMS, and more!
+
+Want to see these features in action? Then check out ROKOmoji in the iTunes App Store.
 
 ## Xcode Project Settings
 Open workspace in Xcode:
@@ -20,8 +30,19 @@ Open workspace in Xcode:
    Value: API key of your ROKO Mobi portal application (see below for ROKO Mobi portal information)
 6. Apply steps 3-5 to Keyboard Extension Target
 
-## Portal settings
-ROKO Mobi provides app developers and product owners with a suite of tools to accelerate mobile development, engage and track customers, and measure their app's success
+## About ROKO Mobi
+ROKO Mobi provides app developers and product owners with a suite of tools to accelerate mobile development, engage and track customers, and measure their app's success. A few things we do:
+
+1. InstaBot (add a chatbot into your app)
+2. Refer-a-Friend
+3. Share
+4. User Analytics
+5. Promo codes
+6. Push notifications
+7. Stickers
+
+Learn more about features at:
+https://roko.mobi
 
 See here for ROKO Mobi documentation, interaction guides, and instructions:
 https://docs.roko.mobi/docs/setting-up-your-account
