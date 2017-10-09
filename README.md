@@ -28,6 +28,8 @@ Open your `.xworkspace` file in Xcode:
   - Value: Your API key ([instructions for retrieving your API key](https://docs.instabot.io/docs/web-basic-setup#section-1-get-your-instabot-api-key))
 6. Apply steps 3-5 to Keyboard Extension Target
 
+#### If you don't have an account yet, please email us at info@instabot.io and we'll get you set up!
+
 ## About ROKO Mobi
 ROKO Mobi provides app developers and product owners with a suite of tools to accelerate mobile development, engage and track customers, and measure their app's success. A few things we do:
 
