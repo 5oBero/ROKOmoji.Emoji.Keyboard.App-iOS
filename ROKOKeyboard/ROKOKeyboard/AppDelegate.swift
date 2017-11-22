@@ -40,11 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         self.pushComponent.register(withAPNToken: deviceToken as Data!) { (responseObject, error) in
-            if error != nil {
-                print("Failed to register with error: \(error)")
-            } else {
-                print("Success registration for push: \(responseObject)")
-            }
+            if let error = error {
+                print("Failed to register with error: \(error.localizedDescription)")
+            }            
         }
     }
     
