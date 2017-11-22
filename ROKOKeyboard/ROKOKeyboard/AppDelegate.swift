@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
                 if error == nil {
-                    application.registerForRemoteNotifications()
+                    DispatchQueue.main.async {
+                        application.registerForRemoteNotifications()
+                    }                    
                 }
             }
         } else {
