@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
                 if error == nil {
-                    application.registerForRemoteNotifications()
+                    DispatchQueue.main.async {
+                        application.registerForRemoteNotifications()
+                    }                    
                 }
             }
         } else {
@@ -40,11 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         self.pushComponent.register(withAPNToken: deviceToken as Data!) { (responseObject, error) in
-            if error != nil {
-                print("Failed to register with error: \(error)")
-            } else {
-                print("Success registration for push: \(responseObject)")
-            }
+            if let error = error {
+                print("Failed to register with error: \(error.localizedDescription)")
+            }            
         }
     }
     

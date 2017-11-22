@@ -129,12 +129,12 @@ class KeyboardViewController: UIInputViewController {
         let color = UIColor.white
         
         let myNormalAttributedTitle = NSMutableAttributedString(string: "Copied to the clipboard. Now tap and\n",
-                                                                attributes: [NSFontAttributeName : font1, NSForegroundColorAttributeName: color ])
+                                                                attributes: [NSAttributedStringKey.font : font1, NSAttributedStringKey.foregroundColor: color ])
         
         let myBoldAttributedTitle = NSAttributedString(string: " paste ",
-                                                       attributes: [NSFontAttributeName : font2, NSForegroundColorAttributeName: color])
+                                                       attributes: [NSAttributedStringKey.font : font2, NSAttributedStringKey.foregroundColor: color])
         let myLastAttributedTitle = NSAttributedString(string: " into the message field",
-                                                       attributes: [NSFontAttributeName : font1, NSForegroundColorAttributeName: color])
+                                                       attributes: [NSAttributedStringKey.font : font1, NSAttributedStringKey.foregroundColor: color])
         myNormalAttributedTitle.append(myBoldAttributedTitle)
         myNormalAttributedTitle.append(myLastAttributedTitle)
         hintButton.translatesAutoresizingMaskIntoConstraints = false
@@ -218,7 +218,7 @@ class KeyboardViewController: UIInputViewController {
     }
     
     // MARK: - Delete button handling
-    func deleteButtonPressed(sender: AnyObject) {
+    @objc func deleteButtonPressed(sender: AnyObject) {
         switch textDocumentProxy.documentContextBeforeInput {
         case let s where s?.hasSuffix("    ") == true: // Cursor in front of tab, so delete tab.
             for _ in 0..<4 { // TODO: Update to use tab setting.
@@ -230,7 +230,7 @@ class KeyboardViewController: UIInputViewController {
         
     }
     
-    func handleLongPressForDeleteButtonWithGestureRecognizer(gestureRecognizer: UILongPressGestureRecognizer) {
+    @objc func handleLongPressForDeleteButtonWithGestureRecognizer(gestureRecognizer: UILongPressGestureRecognizer) {
         switch gestureRecognizer.state {
         case .began, .changed:
             if deleteButtonTimer == nil {
@@ -245,7 +245,7 @@ class KeyboardViewController: UIInputViewController {
         }
     }
     
-    func handleDeleteButtonTimerTick(timer: Timer) {
+    @objc func handleDeleteButtonTimerTick(timer: Timer) {
         var charactersToDelete = 1
         defer {
             for _ in 0..<charactersToDelete {
@@ -272,18 +272,18 @@ extension KeyboardViewController: StickersPanelDelegate {
             ClipboardManager.copy(image)
             
             let info = RLStickerInfo()
-            info.stickerID = stickerInfo.imageInfo.objectId as Int
+            info.stickerID = stickerInfo.imageInfo.objectId as! Int
             info.scale = CGFloat(stickerInfo.scaleFactor)
             
             let packInfo = RLStickerPackInfo()
-            packInfo.packID = pack.objectId as Int
+            packInfo.packID = pack.objectId as! Int
             packInfo.title = pack.name
             ROKOStickers.logStickerSelection(info, inPack: packInfo, withImageId: guid)
             
             
             let item = ROKOStickersEventItem()
-            item.stickerId = stickerInfo.objectId as Int
-            item.stickerPackId = pack.objectId as Int
+            item.stickerId = stickerInfo.objectId as! Int
+            item.stickerPackId = pack.objectId as! Int
             item.stickerPackName = pack.name
             ROKOStickers.logSaving(withStickers: [item], onImageWithId: guid, fromCamera: false)
             showHint()
