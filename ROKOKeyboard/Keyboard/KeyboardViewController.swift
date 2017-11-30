@@ -68,6 +68,7 @@ class KeyboardViewController: UIInputViewController {
         stickers.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.view.addSubview(stickers.view)
         self.addChildViewController(stickers)
+        stickers.configureView()
     }
 }
 

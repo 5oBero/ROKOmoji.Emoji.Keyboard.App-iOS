@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,6 +20,7 @@
             <connections>
                 <outlet property="buttonDelete" destination="JNB-oh-wha" id="oGF-Gl-xvE"/>
                 <outlet property="hintView" destination="kdP-yL-cPu" id="xYC-Qd-LYJ"/>
+                <outlet property="instructionsView" destination="5QV-dq-dNx" id="e20-ge-CnD"/>
                 <outlet property="labelInfo" destination="vlH-VP-vVP" id="Xfe-Nu-PNZ"/>
                 <outlet property="stickersPackPanel" destination="RoQ-7t-swV" id="mhh-dC-Mt0"/>
                 <outlet property="stickersPanel" destination="TkK-sY-Qe2" id="RSr-4J-LQ2"/>
@@ -26,7 +28,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="KeyboardView">
             <rect key="frame" x="0.0" y="0.0" width="400" height="230"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -115,6 +117,33 @@
                         <constraint firstAttribute="bottom" secondItem="Whh-6g-3DI" secondAttribute="bottom" id="mqn-d5-VHD"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-dq-dNx" userLabel="InstructionsView">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="186"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-dD-yzH">
+                            <rect key="frame" x="155" y="113" width="91" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Instructions"/>
+                            <connections>
+                                <action selector="instructionsButtonPressed" destination="-1" eventType="touchUpInside" id="nnM-PS-1av"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable full-access to use your Stickers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boJ-hF-uk3">
+                            <rect key="frame" x="30" y="40" width="340" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="boJ-hF-uk3" firstAttribute="top" secondItem="5QV-dq-dNx" secondAttribute="top" constant="40" id="5Cb-KP-cLK"/>
+                        <constraint firstItem="WqT-dD-yzH" firstAttribute="centerX" secondItem="5QV-dq-dNx" secondAttribute="centerX" id="98L-9V-GaI"/>
+                        <constraint firstAttribute="bottom" secondItem="WqT-dD-yzH" secondAttribute="bottom" constant="40" id="QU8-sV-p9X"/>
+                        <constraint firstItem="boJ-hF-uk3" firstAttribute="width" secondItem="5QV-dq-dNx" secondAttribute="width" multiplier="0.85" id="cV8-g0-G8p"/>
+                        <constraint firstItem="boJ-hF-uk3" firstAttribute="centerX" secondItem="5QV-dq-dNx" secondAttribute="centerX" id="uos-kv-usx"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -126,10 +155,14 @@
                 <constraint firstItem="TkK-sY-Qe2" firstAttribute="top" secondItem="vlH-VP-vVP" secondAttribute="bottom" constant="5" id="Izs-vf-N7L"/>
                 <constraint firstItem="RoQ-7t-swV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="M4d-5M-1J2"/>
                 <constraint firstAttribute="bottom" secondItem="GaD-S9-f5T" secondAttribute="bottom" id="MXk-Pl-COy"/>
+                <constraint firstItem="5QV-dq-dNx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P5j-a6-1if"/>
                 <constraint firstAttribute="bottom" secondItem="kdP-yL-cPu" secondAttribute="bottom" id="R21-vx-D5O"/>
                 <constraint firstItem="RoQ-7t-swV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SBL-bp-b7L"/>
                 <constraint firstAttribute="trailing" secondItem="TkK-sY-Qe2" secondAttribute="trailing" constant="10" id="UWB-N8-UQy"/>
                 <constraint firstAttribute="trailing" secondItem="kdP-yL-cPu" secondAttribute="trailing" id="XBv-hb-AR8"/>
+                <constraint firstItem="5QV-dq-dNx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fx9-Mh-fnH"/>
+                <constraint firstItem="GaD-S9-f5T" firstAttribute="top" secondItem="5QV-dq-dNx" secondAttribute="bottom" id="lnt-3h-f5R"/>
+                <constraint firstAttribute="trailing" secondItem="5QV-dq-dNx" secondAttribute="trailing" id="opx-Fk-UBr"/>
                 <constraint firstItem="GaD-S9-f5T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pjY-cN-3Er"/>
                 <constraint firstItem="kdP-yL-cPu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t4K-YG-Box"/>
             </constraints>

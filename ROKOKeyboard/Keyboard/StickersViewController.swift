@@ -14,6 +14,7 @@ class StickersViewController: UIViewController {
     @IBOutlet weak var hintButton: UIButton!
     @IBOutlet weak var labelInfo: UILabel!
     @IBOutlet weak var buttonDelete: UIButton!
+    @IBOutlet weak var instructionsView: UIView!
     
     @IBOutlet weak var stickersPanel: StickersPanel!
     @IBOutlet weak var stickersPackPanel: StickerPacksPanel!
@@ -61,6 +62,24 @@ class StickersViewController: UIViewController {
         
         dataSource = nil
         stickersDataProvider.stickerPacks?.removeAll()
+    }
+    
+    func configureView() {
+        instructionsView.isHidden = self.keyboardController()?.hasFullAccess ?? false
+    }
+    
+    @IBAction func instructionsButtonPressed() {
+        guard let url = NSURL(string: "rokomojikeyboard://open") else {
+            return
+        }
+//        guard let context = self.extensionContext else {
+//            return
+//        }
+//
+//        context.open(url) { (success) in
+//            print("Success: \(success)")
+//        }
+        self.keyboardController()?.openURL(url: url)
     }
     
     override func didReceiveMemoryWarning() {
@@ -247,4 +266,32 @@ extension StickersViewController: StickerPacksPanelDelegate {
         labelInfo.text = info.name
     }
 
+}
+
+extension UIInputViewController {
+    
+    func openURL(url: NSURL) -> Bool {
+        do {
+            let application = try self.sharedApplication()
+            application.performSelector(inBackground: "openURL:", with: url)
+            return true
+        }
+        catch {
+            return false
+        }
+    }
+    
+    func sharedApplication() throws -> UIApplication {
+        var responder: UIResponder? = self
+        while responder != nil {
+            if let application = responder as? UIApplication {
+                return application
+            }
+            
+            responder = responder?.next
+        }
+        
+        throw NSError(domain: "UIInputViewController+sharedApplication.swift", code: 1, userInfo: nil)
+    }
+    
 }
