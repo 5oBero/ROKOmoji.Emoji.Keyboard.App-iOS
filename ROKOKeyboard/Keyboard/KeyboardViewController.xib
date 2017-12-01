@@ -4,15 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="GothaProReg.otf">
-            <string>GothamPro</string>
+        <array key="SFUIText.ttf">
+            <string>.SFUIText</string>
         </array>
     </customFonts>
     <objects>
@@ -32,33 +31,44 @@
             <rect key="frame" x="0.0" y="0.0" width="400" height="230"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec1-Fx-vSr" userLabel="Top panel">
+                    <rect key="frame" x="0.0" y="8" width="400" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROKOmoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlH-VP-vVP">
+                            <rect key="frame" x="10" y="2.5" width="80" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="WXd-fJ-sFb"/>
+                                <constraint firstAttribute="height" constant="25" id="wjF-Na-61L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="12"/>
+                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-7t-swV" customClass="StickerPacksPanel" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="100" y="0.0" width="290" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vlH-VP-vVP" firstAttribute="centerY" secondItem="ec1-Fx-vSr" secondAttribute="centerY" id="0en-no-wjY"/>
+                        <constraint firstItem="RoQ-7t-swV" firstAttribute="leading" secondItem="vlH-VP-vVP" secondAttribute="trailing" constant="10" id="762-Qr-A0E"/>
+                        <constraint firstAttribute="height" constant="30" id="K35-6l-k49"/>
+                        <constraint firstAttribute="bottom" secondItem="RoQ-7t-swV" secondAttribute="bottom" id="V3U-3V-MJx"/>
+                        <constraint firstAttribute="trailing" secondItem="RoQ-7t-swV" secondAttribute="trailing" constant="10" id="bkZ-jG-A9G"/>
+                        <constraint firstItem="RoQ-7t-swV" firstAttribute="top" secondItem="ec1-Fx-vSr" secondAttribute="top" id="mPG-MM-jyC"/>
+                        <constraint firstItem="vlH-VP-vVP" firstAttribute="leading" secondItem="ec1-Fx-vSr" secondAttribute="leading" constant="10" id="r8K-a8-JoJ"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkK-sY-Qe2" customClass="StickersPanel" customModule="Keyboard" customModuleProvider="target">
-                    <rect key="frame" x="10" y="35" width="380" height="140"/>
+                    <rect key="frame" x="10" y="43" width="380" height="140"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="140" id="HXn-aQ-Ndb"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-7t-swV" customClass="StickerPacksPanel" customModule="Keyboard" customModuleProvider="target">
-                    <rect key="frame" x="40" y="10" width="320" height="40"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="320" id="Imf-Cm-HbY"/>
-                        <constraint firstAttribute="height" constant="40" id="X1G-8D-NXy"/>
-                    </constraints>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROKOmoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlH-VP-vVP">
-                    <rect key="frame" x="15" y="5" width="250" height="25"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="250" id="8KR-je-t5U"/>
-                        <constraint firstAttribute="height" constant="25" id="wjF-Na-61L"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
-                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-yL-cPu" userLabel="hintView">
-                    <rect key="frame" x="0.0" y="0.0" width="400" height="230"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-yL-cPu" userLabel="hintView">
+                    <rect key="frame" x="153" y="154" width="400" height="230"/>
                     <color key="backgroundColor" red="0.1244189367" green="0.2326295078" blue="0.4080079794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-S9-f5T" userLabel="ControlPanel">
@@ -108,7 +118,7 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Whh-6g-3DI" firstAttribute="top" secondItem="GaD-S9-f5T" secondAttribute="top" id="9mL-Fe-PuQ"/>
                         <constraint firstAttribute="trailing" secondItem="Whh-6g-3DI" secondAttribute="trailing" constant="40" id="Pos-ZN-XfW"/>
@@ -117,8 +127,8 @@
                         <constraint firstAttribute="bottom" secondItem="Whh-6g-3DI" secondAttribute="bottom" id="mqn-d5-VHD"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-dq-dNx" userLabel="InstructionsView">
-                    <rect key="frame" x="0.0" y="0.0" width="400" height="186"/>
+                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-dq-dNx" userLabel="InstructionsView">
+                    <rect key="frame" x="-192" y="154" width="400" height="186"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-dD-yzH">
                             <rect key="frame" x="155" y="113" width="91" height="33"/>
@@ -147,24 +157,23 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="vlH-VP-vVP" firstAttribute="leading" secondItem="TkK-sY-Qe2" secondAttribute="leading" constant="5" id="0wX-eu-KBv"/>
                 <constraint firstItem="kdP-yL-cPu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2P1-fu-Ew8"/>
+                <constraint firstItem="TkK-sY-Qe2" firstAttribute="top" secondItem="ec1-Fx-vSr" secondAttribute="bottom" constant="5" id="4HJ-hR-05y"/>
                 <constraint firstItem="TkK-sY-Qe2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="7yA-Cg-QbK"/>
                 <constraint firstAttribute="trailing" secondItem="GaD-S9-f5T" secondAttribute="trailing" id="CJt-5d-aGL"/>
-                <constraint firstItem="vlH-VP-vVP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="CVK-Vs-lCm"/>
-                <constraint firstItem="TkK-sY-Qe2" firstAttribute="top" secondItem="vlH-VP-vVP" secondAttribute="bottom" constant="5" id="Izs-vf-N7L"/>
-                <constraint firstItem="RoQ-7t-swV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="M4d-5M-1J2"/>
                 <constraint firstAttribute="bottom" secondItem="GaD-S9-f5T" secondAttribute="bottom" id="MXk-Pl-COy"/>
                 <constraint firstItem="5QV-dq-dNx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P5j-a6-1if"/>
                 <constraint firstAttribute="bottom" secondItem="kdP-yL-cPu" secondAttribute="bottom" id="R21-vx-D5O"/>
-                <constraint firstItem="RoQ-7t-swV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SBL-bp-b7L"/>
                 <constraint firstAttribute="trailing" secondItem="TkK-sY-Qe2" secondAttribute="trailing" constant="10" id="UWB-N8-UQy"/>
                 <constraint firstAttribute="trailing" secondItem="kdP-yL-cPu" secondAttribute="trailing" id="XBv-hb-AR8"/>
                 <constraint firstItem="5QV-dq-dNx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fx9-Mh-fnH"/>
+                <constraint firstItem="ec1-Fx-vSr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="io7-xw-6h9"/>
                 <constraint firstItem="GaD-S9-f5T" firstAttribute="top" secondItem="5QV-dq-dNx" secondAttribute="bottom" id="lnt-3h-f5R"/>
+                <constraint firstAttribute="trailing" secondItem="ec1-Fx-vSr" secondAttribute="trailing" id="mbh-jh-FxB"/>
                 <constraint firstAttribute="trailing" secondItem="5QV-dq-dNx" secondAttribute="trailing" id="opx-Fk-UBr"/>
                 <constraint firstItem="GaD-S9-f5T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pjY-cN-3Er"/>
                 <constraint firstItem="kdP-yL-cPu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t4K-YG-Box"/>
+                <constraint firstItem="ec1-Fx-vSr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="yIY-4s-zyS"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

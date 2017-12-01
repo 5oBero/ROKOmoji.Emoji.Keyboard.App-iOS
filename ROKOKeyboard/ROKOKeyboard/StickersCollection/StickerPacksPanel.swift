@@ -9,7 +9,7 @@
 import UIKit
 import ROKOMobi
 
-let stickerPackIconSize: CGFloat = 35.0
+let stickerPackIconSize: CGFloat = 30.0
 let stickerPackSpacing: CGFloat = 7.0
 
 protocol StickerPacksPanelDelegate: class {

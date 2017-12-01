@@ -20,15 +20,6 @@ enum KeyboardType {
     }
 }
 
-extension KeyboardType {
-    func nextType() -> KeyboardType? {
-        switch self {
-        case .stickers:
-            return nil;
-        }
-    }
-}
-
 protocol KeyboardContolPanelController {
     func backspacePressed()
     func globePressed()
@@ -120,11 +111,7 @@ extension KeyboardViewController: KeyboardContolPanelController {
     }
     
     func globePressed() {
-        guard let nextType = self.type.nextType() else {
-            advanceToNextInputMode()
-            return
-        }
-        self.type = nextType;
+        advanceToNextInputMode()
     }
     
     func numericButtonPressed() {
