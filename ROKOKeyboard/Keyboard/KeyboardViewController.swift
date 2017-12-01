@@ -10,6 +10,14 @@ import UIKit
 
 enum KeyboardType {
     case stickers
+    
+    func controller() -> UIViewController & KeyboardController {
+        switch self {
+        case .stickers:
+            let stickersController = StickersViewController(nibName: "KeyboardViewController", bundle: nil)
+            return stickersController
+        }
+    }
 }
 
 extension KeyboardType {
@@ -29,6 +37,7 @@ protocol KeyboardContolPanelController {
 }
 
 class KeyboardViewController: UIInputViewController {
+    var heightConstraint: NSLayoutConstraint?
     
     var type = KeyboardType.stickers {
         didSet {
@@ -63,12 +72,38 @@ class KeyboardViewController: UIInputViewController {
     }
     
     private func reloadKeyboard() {
-        let stickers = StickersViewController(nibName: "KeyboardViewController", bundle: nil)
-        stickers.view.frame = self.view.bounds
-        stickers.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        self.view.addSubview(stickers.view)
-        self.addChildViewController(stickers)
-        stickers.configureView()
+        if let oldKeyboard = self.childViewControllers.first {
+            oldKeyboard.view.removeFromSuperview()
+            oldKeyboard.removeFromParentViewController()
+        }
+        let keyboard = self.type.controller()
+        keyboard.view.frame = self.view.bounds
+        keyboard.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        self.view.addSubview(keyboard.view)
+        self.addChildViewController(keyboard)
+        keyboard.configureKeyboard()
+        
+        
+        self.setHeight(keyboard.height)
+
+    }
+    
+    func setHeight(_ height: CGFloat) {
+        if heightConstraint == nil {
+            heightConstraint = NSLayoutConstraint(item: view,
+                                                  attribute: .height,
+                                                  relatedBy: .equal,
+                                                  toItem: nil,
+                                                  attribute: .notAnAttribute,
+                                                  multiplier: 1,
+                                                  constant: height)
+            heightConstraint!.priority = UILayoutPriority.required
+            
+            view.addConstraint(heightConstraint!)
+        }
+        else {
+            heightConstraint?.constant = height
+        }
     }
 }
 

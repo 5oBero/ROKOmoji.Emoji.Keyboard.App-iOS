@@ -8,8 +8,9 @@
 
 import UIKit
 
-class StickersViewController: UIViewController {
-
+class StickersViewController: UIViewController, KeyboardController {
+    var height: CGFloat = 216
+    
     @IBOutlet weak var hintView: UIView!
     @IBOutlet weak var hintButton: UIButton!
     @IBOutlet weak var labelInfo: UILabel!
@@ -24,8 +25,6 @@ class StickersViewController: UIViewController {
     fileprivate var guid = NSUUID().uuidString
     private var deleteButtonTimer: Timer?
     private var deleteCharactersCount = 0
-    
-    public var height: CGFloat = 216;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,21 +63,16 @@ class StickersViewController: UIViewController {
         stickersDataProvider.stickerPacks?.removeAll()
     }
     
-    func configureView() {
+    func configureKeyboard() {
         instructionsView.isHidden = self.keyboardController()?.hasFullAccess ?? false
+//        self.height = 258
     }
     
     @IBAction func instructionsButtonPressed() {
         guard let url = NSURL(string: "rokomojikeyboard://open") else {
             return
         }
-//        guard let context = self.extensionContext else {
-//            return
-//        }
-//
-//        context.open(url) { (success) in
-//            print("Success: \(success)")
-//        }
+
         self.keyboardController()?.openURL(url: url)
     }
     
