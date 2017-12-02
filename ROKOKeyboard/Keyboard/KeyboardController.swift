@@ -14,3 +14,9 @@ protocol KeyboardController: class {
     
     func configureKeyboard()
 }
+
+extension KeyboardController where Self : UIViewController {
+    func keyboardController() -> KeyboardViewController? {
+        return self.parent as? KeyboardViewController
+    }
+}

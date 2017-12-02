@@ -65,7 +65,9 @@ class StickersViewController: UIViewController, KeyboardController {
     
     func configureKeyboard() {
         instructionsView.isHidden = self.keyboardController()?.hasFullAccess ?? false
-//        self.height = 258
+        if instructionsView.isHidden {
+            self.height = 258
+        }
     }
     
     @IBAction func instructionsButtonPressed() {
@@ -222,10 +224,6 @@ class StickersViewController: UIViewController, KeyboardController {
 //            }
 //        }
 //    }
-    
-    func keyboardController() -> KeyboardViewController? {
-        return self.parent as? KeyboardViewController
-    }
 }
 
 extension StickersViewController: StickersPanelDelegate {

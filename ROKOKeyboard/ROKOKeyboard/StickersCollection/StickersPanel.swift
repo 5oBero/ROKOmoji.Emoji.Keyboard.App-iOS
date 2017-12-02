@@ -9,8 +9,8 @@
 import UIKit
 import ROKOMobi
 
-let stickerIconSize: CGFloat = 30.0
-let stickerSpacing: CGFloat = 17.0
+let stickerIconSize: CGFloat = 35.0
+let stickerSpacing: CGFloat = 5.0
 
 protocol StickersPanelDelegate: class {
     func didSelect(image: UIImage!, pack: ROKOStickerPack, stickerInfo: ROKOSticker)
