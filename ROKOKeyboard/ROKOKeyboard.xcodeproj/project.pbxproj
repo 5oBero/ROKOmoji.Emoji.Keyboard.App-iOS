@@ -17,6 +17,8 @@
 		270531571DC8D829002B93FD /* StickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270531551DC8D829002B93FD /* StickerDataSource.swift */; };
 		2707B59E1FCB3A570096852E /* StickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707B59D1FCB3A570096852E /* StickersViewController.swift */; };
 		271A3EF01FD16E950022DFAA /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A3EEF1FD16E950022DFAA /* KeyboardController.swift */; };
+		27248EE41FD2ACE5006DA1E2 /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */; };
+		27248EE51FD2ACE5006DA1E2 /* LettersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */; };
 		73D06AB3BAA2EF192DF16F9E /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5272864A14194BF4BE961A /* Pods_Keyboard.framework */; };
 		8F2258351DB79396008854AC /* StickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2258301DB79396008854AC /* StickerIcon.swift */; };
 		8F2258361DB79396008854AC /* StickerIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2258311DB79396008854AC /* StickerIcon.xib */; };
@@ -177,6 +179,8 @@
 		270531551DC8D829002B93FD /* StickerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerDataSource.swift; sourceTree = "<group>"; };
 		2707B59D1FCB3A570096852E /* StickersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersViewController.swift; sourceTree = "<group>"; };
 		271A3EEF1FD16E950022DFAA /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
+		27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
+		27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LettersViewController.xib; sourceTree = "<group>"; };
 		290AB65F7AA6F58244C0D36F /* Pods-ROKOmoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.debug.xcconfig"; sourceTree = "<group>"; };
 		3BAA6197D7F84644FC06903B /* Pods-ROKOmoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.release.xcconfig"; sourceTree = "<group>"; };
 		6CF33D956FA1336DDED57893 /* Pods_ROKOmoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROKOmoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +371,8 @@
 				271A3EEF1FD16E950022DFAA /* KeyboardController.swift */,
 				2707B59D1FCB3A570096852E /* StickersViewController.swift */,
 				8F6EBD9C1D0805B50022E6A4 /* KeyboardViewController.xib */,
+				27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */,
+				27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */,
 				8F6EBDA61D085C940022E6A4 /* Utilites */,
 				8F9DD6791D05AB250079CB1D /* Info.plist */,
 				8F6EBDA11D081F5F0022E6A4 /* Keyboard-Bridging-Header.h */,
@@ -643,6 +649,7 @@
 				8FF6D43C1DCB7E14000270A8 /* Pack_1188767.icon_166176367.Stickers in Resources */,
 				8FF6D4391DCB7E14000270A8 /* Pack_1188767.icon_1149302.Stickers in Resources */,
 				8FF6D4601DCB7E14000270A8 /* Pack_1188767.image_698366.Stickers in Resources */,
+				27248EE51FD2ACE5006DA1E2 /* LettersViewController.xib in Resources */,
 				8FF6D43F1DCB7E14000270A8 /* Pack_1188767.icon_166176376.Stickers in Resources */,
 				8FF6D4571DCB7E14000270A8 /* Pack_1188767.image_166176388.Stickers in Resources */,
 				8FF6D4441DCB7E14000270A8 /* Pack_1188767.icon_166176391.Stickers in Resources */,
@@ -830,6 +837,7 @@
 				2707B59E1FCB3A570096852E /* StickersViewController.swift in Sources */,
 				8F2258471DB7B073008854AC /* StickerPacksPanel.swift in Sources */,
 				2705314C1DC8A76C002B93FD /* StickerCache.swift in Sources */,
+				27248EE41FD2ACE5006DA1E2 /* LettersViewController.swift in Sources */,
 				8F9DD6781D05AB250079CB1D /* KeyboardViewController.swift in Sources */,
 				271A3EF01FD16E950022DFAA /* KeyboardController.swift in Sources */,
 				8F2258441DB7B06B008854AC /* StickerPackIcon.swift in Sources */,

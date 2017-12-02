@@ -75,7 +75,7 @@ class StickersViewController: UIViewController, KeyboardController {
             return
         }
 
-        self.keyboardController()?.openURL(url: url)
+        let _ = self.keyboardController()?.openURL(url: url)
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,6 +85,9 @@ class StickersViewController: UIViewController, KeyboardController {
     @IBAction func clickGlobe(_ sender: AnyObject) {
         ROKOStickers.logExitedStickersPanel()
         self.keyboardController()?.globePressed();
+    }
+    @IBAction func lettersButtonPressed() {
+        self.keyboardController()?.type = .letters
     }
     
     fileprivate func configuteHintButton() {

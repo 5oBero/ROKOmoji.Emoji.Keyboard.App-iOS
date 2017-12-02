@@ -64,8 +64,8 @@
                     <rect key="frame" x="10" y="53" width="380" height="133"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-yL-cPu" userLabel="hintView">
-                    <rect key="frame" x="153" y="154" width="400" height="230"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-yL-cPu" userLabel="hintView">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="230"/>
                     <color key="backgroundColor" red="0.1244189367" green="0.2326295078" blue="0.4080079794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-S9-f5T" userLabel="ControlPanel">
@@ -86,14 +86,17 @@
                                         <action selector="clickGlobe:" destination="-1" eventType="touchUpInside" id="ja2-WB-odL"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-Zk-X46">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-Zk-X46" userLabel="Letters button">
                                     <rect key="frame" x="92" y="0.0" width="44" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="dfI-Zk-X46" secondAttribute="height" multiplier="1:1" id="owN-sr-biP"/>
                                     </constraints>
                                     <state key="normal" image="ABC"/>
+                                    <connections>
+                                        <action selector="lettersButtonPressed" destination="-1" eventType="touchUpInside" id="bgu-sh-bfb"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-PJ-Kdn">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-PJ-Kdn" userLabel="Numbers button">
                                     <rect key="frame" x="184" y="0.0" width="44" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="WMe-PJ-Kdn" secondAttribute="height" multiplier="1:1" id="qhw-mB-w4Q"/>
@@ -124,8 +127,8 @@
                         <constraint firstAttribute="bottom" secondItem="Whh-6g-3DI" secondAttribute="bottom" id="mqn-d5-VHD"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-dq-dNx" userLabel="InstructionsView">
-                    <rect key="frame" x="-192" y="154" width="400" height="186"/>
+                <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-dq-dNx" userLabel="InstructionsView">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="186"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-dD-yzH">
                             <rect key="frame" x="155" y="113" width="91" height="33"/>
