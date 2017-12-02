@@ -10,6 +10,14 @@ import UIKit
 
 class LettersViewController: UIViewController, KeyboardController {
     var height: CGFloat = 216
+    var shift: Bool = true {
+        willSet {
+            if (shift == newValue) {
+                return
+            }
+            updateCapitalization(capitalization: newValue, in: self.view)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +63,7 @@ class LettersViewController: UIViewController, KeyboardController {
             return
         }
         self.keyboardController()?.textDocumentProxy.insertText(text)
+        self.shift = false
     }
     
     @IBAction func spaceTap(_ sender: UITapGestureRecognizer) {
@@ -66,4 +75,27 @@ class LettersViewController: UIViewController, KeyboardController {
         self.keyboardController()?.textDocumentProxy.insertText(". ")
     }
     
+    @IBAction func shiftButtonPressed() {
+        self.shift = !self.shift
+    }
+    
+    func updateCapitalization(capitalization: Bool, in view: UIView) {
+        for subview in view.subviews {
+            if let stackView = subview as? UIStackView {
+                updateCapitalization(capitalization: capitalization, in: stackView)
+                continue
+            }
+            guard let button = subview as? UIButton else {
+                continue
+            }
+            guard let buttonText = button.title(for: .normal) else {
+                continue
+            }
+            if buttonText.count != 1 {
+                continue
+            }
+            let newText = capitalization ? buttonText.uppercased() : buttonText.lowercased()
+            button.setTitle(newText, for: .normal)
+        }
+    }
 }

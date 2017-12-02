@@ -307,6 +307,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3l-24-KLX" userLabel="Shift Button">
                     <rect key="frame" x="4" y="114" width="42" height="42"/>
                     <state key="normal" image="Shift" backgroundImage="DarkKey"/>
+                    <connections>
+                        <action selector="shiftButtonPressed" destination="-1" eventType="touchUpInside" id="yus-sx-0he"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrl-v9-59P" userLabel="Numbers button">
                     <rect key="frame" x="4" y="166" width="42" height="42"/>
