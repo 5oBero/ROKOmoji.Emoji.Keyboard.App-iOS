@@ -335,11 +335,13 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8s-Qt-Vbc">
                     <rect key="frame" x="148" y="167" width="128.5" height="42"/>
+                    <gestureRecognizers/>
                     <state key="normal" title="space" backgroundImage="Key">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="spacePressed" destination="-1" eventType="touchUpInside" id="Pi4-rv-tFR"/>
+                        <outletCollection property="gestureRecognizers" destination="vKD-ZH-hJS" appends="YES" id="hn5-8A-YvL"/>
+                        <outletCollection property="gestureRecognizers" destination="tcU-hp-NvA" appends="YES" id="pBv-el-qWR"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz7-AL-RN1">
@@ -394,6 +396,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="-2"/>
         </view>
+        <tapGestureRecognizer numberOfTapsRequired="2" id="vKD-ZH-hJS">
+            <connections>
+                <action selector="spaceDoubleTap:" destination="-1" id="04I-Ht-c7P"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="tcU-hp-NvA">
+            <connections>
+                <action selector="spaceTap:" destination="-1" id="Qat-aR-dd7"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="123" width="25" height="14"/>

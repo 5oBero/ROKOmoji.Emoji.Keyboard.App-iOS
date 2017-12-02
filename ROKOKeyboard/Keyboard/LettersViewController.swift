@@ -46,10 +46,6 @@ class LettersViewController: UIViewController, KeyboardController {
         self.keyboardController()?.backspacePressed()
     }
     
-    @IBAction func spacePressed() {
-        self.keyboardController()?.textDocumentProxy.insertText(" ")
-    }
-    
     @IBAction func returnButtonPressed() {
         self.keyboardController()?.textDocumentProxy.insertText("\n")
     }
@@ -59,6 +55,15 @@ class LettersViewController: UIViewController, KeyboardController {
             return
         }
         self.keyboardController()?.textDocumentProxy.insertText(text)
+    }
+    
+    @IBAction func spaceTap(_ sender: UITapGestureRecognizer) {
+        self.keyboardController()?.textDocumentProxy.insertText(" ")
+    }
+    
+    @IBAction func spaceDoubleTap(_ sender: UITapGestureRecognizer) {
+        self.keyboardController()?.textDocumentProxy.deleteBackward()
+        self.keyboardController()?.textDocumentProxy.insertText(". ")
     }
     
 }
