@@ -314,6 +314,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrl-v9-59P" userLabel="Numbers button">
                     <rect key="frame" x="4" y="166" width="42" height="42"/>
                     <state key="normal" image="123" backgroundImage="DarkKey"/>
+                    <connections>
+                        <action selector="numbersButtonPressed" destination="-1" eventType="touchUpInside" id="vRt-c1-uBL"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrn-WW-dOQ" userLabel="Globe button">
                     <rect key="frame" x="52" y="166.5" width="42" height="42"/>

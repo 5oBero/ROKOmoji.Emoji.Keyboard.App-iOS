@@ -19,6 +19,7 @@
 		271A3EF01FD16E950022DFAA /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A3EEF1FD16E950022DFAA /* KeyboardController.swift */; };
 		27248EE41FD2ACE5006DA1E2 /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */; };
 		27248EE51FD2ACE5006DA1E2 /* LettersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */; };
+		27F7729E1FD5992900AE1981 /* NumbersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F7729D1FD5992900AE1981 /* NumbersViewController.xib */; };
 		73D06AB3BAA2EF192DF16F9E /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5272864A14194BF4BE961A /* Pods_Keyboard.framework */; };
 		8F2258351DB79396008854AC /* StickerIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2258301DB79396008854AC /* StickerIcon.swift */; };
 		8F2258361DB79396008854AC /* StickerIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2258311DB79396008854AC /* StickerIcon.xib */; };
@@ -181,6 +182,7 @@
 		271A3EEF1FD16E950022DFAA /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
 		27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
 		27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LettersViewController.xib; sourceTree = "<group>"; };
+		27F7729D1FD5992900AE1981 /* NumbersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumbersViewController.xib; sourceTree = "<group>"; };
 		290AB65F7AA6F58244C0D36F /* Pods-ROKOmoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.debug.xcconfig"; sourceTree = "<group>"; };
 		3BAA6197D7F84644FC06903B /* Pods-ROKOmoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROKOmoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROKOmoji/Pods-ROKOmoji.release.xcconfig"; sourceTree = "<group>"; };
 		6CF33D956FA1336DDED57893 /* Pods_ROKOmoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROKOmoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +375,7 @@
 				8F6EBD9C1D0805B50022E6A4 /* KeyboardViewController.xib */,
 				27248EE21FD2ACE5006DA1E2 /* LettersViewController.swift */,
 				27248EE31FD2ACE5006DA1E2 /* LettersViewController.xib */,
+				27F7729D1FD5992900AE1981 /* NumbersViewController.xib */,
 				8F6EBDA61D085C940022E6A4 /* Utilites */,
 				8F9DD6791D05AB250079CB1D /* Info.plist */,
 				8F6EBDA11D081F5F0022E6A4 /* Keyboard-Bridging-Header.h */,
@@ -624,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF6D4481DCB7E14000270A8 /* Pack_1188767.icon_166927092.Stickers in Resources */,
+				27F7729E1FD5992900AE1981 /* NumbersViewController.xib in Resources */,
 				8F2258431DB7B068008854AC /* StickerIcon.xib in Resources */,
 				8FF6D4591DCB7E14000270A8 /* Pack_1188767.image_166927076.Stickers in Resources */,
 				8FF6D44D1DCB7E14000270A8 /* Pack_1188767.image_1149302.Stickers in Resources */,

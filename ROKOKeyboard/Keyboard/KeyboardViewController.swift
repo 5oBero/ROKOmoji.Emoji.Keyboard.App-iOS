@@ -11,6 +11,7 @@ import UIKit
 enum KeyboardType {
     case stickers
     case letters
+    case numbers
     
     func controller() -> UIViewController & KeyboardController {
         switch self {
@@ -19,6 +20,9 @@ enum KeyboardType {
             return stickersController
         case .letters:
             let lettersController = LettersViewController(nibName: "LettersViewController", bundle: nil)
+            return lettersController
+        case .numbers:
+            let lettersController = LettersViewController(nibName: "NumbersViewController", bundle: nil)
             return lettersController
         }
     }

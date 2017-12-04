@@ -31,8 +31,16 @@ class LettersViewController: UIViewController, KeyboardController {
     }
     
     func configureKeyboard() {
+        updateButtonsBackground(in: self.view)
+    }
+    
+    func updateButtonsBackground(in view:UIView) {
         let insets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        for subview in self.view.subviews {
+        for subview in view.subviews {
+            if let stackView = subview as? UIStackView {
+                updateButtonsBackground(in: stackView)
+                continue
+            }
             guard let button = subview as? UIButton else {
                 continue
             }
@@ -46,12 +54,20 @@ class LettersViewController: UIViewController, KeyboardController {
         self.keyboardController()?.type = .stickers
     }
     
+    @IBAction func numbersButtonPressed() {
+        self.keyboardController()?.type = .numbers
+    }
+    
     @IBAction func globeButtonPressed() {
         self.keyboardController()?.globePressed();
     }
     
     @IBAction func deleteButtonPressed() {
         self.keyboardController()?.backspacePressed()
+    }
+    
+    @IBAction func lettersButtonPressed() {
+        self.keyboardController()?.type = .letters
     }
     
     @IBAction func returnButtonPressed() {

@@ -90,6 +90,10 @@ class StickersViewController: UIViewController, KeyboardController {
         self.keyboardController()?.type = .letters
     }
     
+    @IBAction func numbersButtonPressed() {
+        self.keyboardController()?.type = .numbers
+    }
+    
     fileprivate func configuteHintButton() {
         hintView.backgroundColor = UIColor(red: 32/255.0, green: 59/255.0, blue: 104/255.0, alpha: 0.7)
         
