@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="n53-hk-Wo7">
-                    <rect key="frame" x="4" y="10" width="367.5" height="42"/>
+                    <rect key="frame" x="4" y="30" width="367.5" height="42"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVI-V5-alC">
                             <rect key="frame" x="0.0" y="0.0" width="32.5" height="42"/>
@@ -129,7 +130,7 @@
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y9X-ie-SOk">
-                    <rect key="frame" x="22.5" y="62" width="330" height="42"/>
+                    <rect key="frame" x="22.5" y="82" width="330" height="42"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7l-r6-Mj6">
                             <rect key="frame" x="0.0" y="0.0" width="32" height="42"/>
@@ -227,7 +228,7 @@
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-Zg-WzX">
-                    <rect key="frame" x="60.5" y="114" width="254" height="42"/>
+                    <rect key="frame" x="60.5" y="134" width="254" height="42"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-Gc-nMt">
                             <rect key="frame" x="0.0" y="0.0" width="32" height="42"/>
@@ -305,42 +306,42 @@
                     </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3l-24-KLX" userLabel="Shift Button">
-                    <rect key="frame" x="4" y="114" width="42" height="42"/>
+                    <rect key="frame" x="4" y="134" width="42" height="42"/>
                     <state key="normal" image="Shift" backgroundImage="DarkKey"/>
                     <connections>
                         <action selector="shiftButtonPressed" destination="-1" eventType="touchUpInside" id="yus-sx-0he"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrl-v9-59P" userLabel="Numbers button">
-                    <rect key="frame" x="4" y="166" width="42" height="42"/>
+                    <rect key="frame" x="4" y="186" width="42" height="42"/>
                     <state key="normal" image="123" backgroundImage="DarkKey"/>
                     <connections>
                         <action selector="numbersButtonPressed" destination="-1" eventType="touchUpInside" id="vRt-c1-uBL"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrn-WW-dOQ" userLabel="Globe button">
-                    <rect key="frame" x="52" y="166.5" width="42" height="42"/>
+                    <rect key="frame" x="52" y="186.5" width="42" height="42"/>
                     <state key="normal" image="Language" backgroundImage="DarkKey"/>
                     <connections>
                         <action selector="globeButtonPressed" destination="-1" eventType="touchUpInside" id="cR8-5t-SyQ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-gh-rpT" userLabel="Emoji button">
-                    <rect key="frame" x="100" y="166.5" width="42" height="42"/>
+                    <rect key="frame" x="100" y="186.5" width="42" height="42"/>
                     <state key="normal" image="Emoji" backgroundImage="DarkKey"/>
                     <connections>
                         <action selector="emojiButtonPressed" destination="-1" eventType="touchUpInside" id="oLW-vB-JE8"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyR-We-CgV" userLabel="Delete button">
-                    <rect key="frame" x="329" y="114" width="42" height="42"/>
+                    <rect key="frame" x="329" y="134" width="42" height="42"/>
                     <state key="normal" image="Backspace" backgroundImage="DarkKey"/>
                     <connections>
                         <action selector="deleteButtonPressed" destination="-1" eventType="touchUpInside" id="S5y-tm-iP3"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8s-Qt-Vbc">
-                    <rect key="frame" x="148" y="167" width="128.5" height="42"/>
+                    <rect key="frame" x="148" y="187" width="128.5" height="42"/>
                     <gestureRecognizers/>
                     <state key="normal" title="space" backgroundImage="Key">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -351,7 +352,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz7-AL-RN1">
-                    <rect key="frame" x="282.5" y="166" width="88.5" height="42"/>
+                    <rect key="frame" x="282.5" y="186" width="88.5" height="42"/>
                     <state key="normal" title="return" backgroundImage="DarkKey">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

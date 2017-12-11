@@ -38,6 +38,15 @@ protocol KeyboardContolPanelController {
 class KeyboardViewController: UIInputViewController {
     var heightConstraint: NSLayoutConstraint?
     
+    override var hasFullAccess: Bool {
+        get {
+            if #available(iOS 11, *) {
+                return super.hasFullAccess
+            }
+            return true
+        }
+    }
+    
     var type = KeyboardType.stickers {
         didSet {
             self.reloadKeyboard()

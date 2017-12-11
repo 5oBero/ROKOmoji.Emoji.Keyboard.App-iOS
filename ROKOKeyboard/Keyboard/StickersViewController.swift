@@ -9,7 +9,7 @@
 import UIKit
 
 class StickersViewController: UIViewController, KeyboardController {
-    var height: CGFloat = 216
+    var height: CGFloat = StickersViewController.defaultHeight()
     
     @IBOutlet weak var hintView: UIView!
     @IBOutlet weak var hintButton: UIButton!
@@ -66,7 +66,7 @@ class StickersViewController: UIViewController, KeyboardController {
     func configureKeyboard() {
         instructionsView.isHidden = self.keyboardController()?.hasFullAccess ?? false
         if instructionsView.isHidden {
-            self.height = 258
+            self.height = StickersViewController.fullHeight()
         }
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 
 class LettersViewController: UIViewController, KeyboardController {
-    var height: CGFloat = 216
+    var height: CGFloat = LettersViewController.defaultHeight()
     var shift: Bool = true {
         willSet {
             if (shift == newValue) {

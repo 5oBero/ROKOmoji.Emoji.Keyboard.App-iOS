@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,11 +21,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1nk-bk-Mhi">
-                    <rect key="frame" x="6" y="6" width="363" height="46"/>
+                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" horizontalCompressionResistancePriority="250" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1nk-bk-Mhi">
+                    <rect key="frame" x="6" y="6" width="363" height="45.5"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le7-8f-6jT">
-                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le7-8f-6jT">
+                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="1" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,8 +34,8 @@
                                 <action selector="letterButtonPressed:" destination="-1" eventType="touchUpInside" id="m4q-DR-raW"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-Xj-1hM" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="122.5" y="0.0" width="118" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-Xj-1hM" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="122.5" y="0.0" width="118" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="2" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,8 +44,8 @@
                                 <action selector="letterButtonPressed:" destination="-1" eventType="touchUpInside" id="3FC-4l-M0Z"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj0-BE-iJF" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj0-BE-iJF" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
+                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="3" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,14 +56,14 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="46" id="5La-dP-2nF"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="557" id="c2R-7g-aFh"/>
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="86Q-rm-Du8">
-                    <rect key="frame" x="6" y="59" width="363" height="46"/>
+                    <rect key="frame" x="6" y="58.5" width="363" height="45.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-zF-AkH" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="4" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +73,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peK-1P-2fa" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="122.5" y="0.0" width="118" height="46"/>
+                            <rect key="frame" x="122.5" y="0.0" width="118" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="5" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,7 +83,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcd-Rg-e9a" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="46"/>
+                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="6" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,15 +93,12 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="46" id="5r0-iG-9HZ"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9UV-66-4qK">
-                    <rect key="frame" x="6" y="112" width="363" height="46"/>
+                    <rect key="frame" x="6" y="111" width="363" height="45.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-Ke-jCb" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="46"/>
+                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="7" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,7 +108,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5An-V1-Tke" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="122.5" y="0.0" width="118" height="46"/>
+                            <rect key="frame" x="122.5" y="0.0" width="118" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="8" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,7 +118,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2M-n2-HVw" customClass="NumericButton" customModule="Keyboard" customModuleProvider="target">
-                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="46"/>
+                            <rect key="frame" x="244.5" y="0.0" width="118.5" height="45.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <state key="normal" title="9" backgroundImage="Key">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,15 +128,9 @@
                             </connections>
                         </button>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="46" id="YVg-dF-oxW"/>
-                    </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-To-Ud3">
-                    <rect key="frame" x="128.5" y="165" width="118" height="46"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="46" id="DGs-CV-QVc"/>
-                    </constraints>
+                    <rect key="frame" x="128.5" y="163.5" width="118" height="45.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="0" backgroundImage="Key">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -147,7 +140,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Dj-UdS" userLabel="Emoji button">
-                    <rect key="frame" x="278" y="164.5" width="42" height="46"/>
+                    <rect key="frame" x="278" y="163.5" width="42" height="46"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="Rm9-Dm-wMx"/>
                         <constraint firstAttribute="width" constant="42" id="TBD-gT-Is7"/>
@@ -158,7 +151,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mf-er-at8" userLabel="Delete button">
-                    <rect key="frame" x="327" y="164.5" width="42" height="46"/>
+                    <rect key="frame" x="327" y="163.5" width="42" height="46"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="nVu-ph-6GB"/>
                         <constraint firstAttribute="height" constant="46" id="t1o-z1-zAN"/>
@@ -169,7 +162,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEU-8h-7Mc" userLabel="Globe button">
-                    <rect key="frame" x="6" y="165" width="42" height="46"/>
+                    <rect key="frame" x="6" y="164" width="42" height="46"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="bG2-OD-V5B"/>
                         <constraint firstAttribute="height" constant="46" id="fs8-nS-J3p"/>
@@ -180,7 +173,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Che-pM-TsJ" userLabel="Letters button">
-                    <rect key="frame" x="55" y="165" width="42" height="46"/>
+                    <rect key="frame" x="55" y="164" width="42" height="46"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="aPc-D4-oPb"/>
                         <constraint firstAttribute="height" constant="46" id="p36-zi-FXB"/>
@@ -197,17 +190,22 @@
                 <constraint firstItem="Che-pM-TsJ" firstAttribute="leading" secondItem="FEU-8h-7Mc" secondAttribute="trailing" constant="7" id="2Fy-jo-IBf"/>
                 <constraint firstItem="86Q-rm-Du8" firstAttribute="top" secondItem="1nk-bk-Mhi" secondAttribute="bottom" constant="7" id="2oN-U2-y3F"/>
                 <constraint firstItem="9UV-66-4qK" firstAttribute="trailing" secondItem="1nk-bk-Mhi" secondAttribute="trailing" id="5Ar-3Z-1De"/>
-                <constraint firstItem="1nk-bk-Mhi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="CXb-Et-OWj"/>
+                <constraint firstItem="eeE-To-Ud3" firstAttribute="height" secondItem="9UV-66-4qK" secondAttribute="height" id="8HX-gf-IMm"/>
+                <constraint firstItem="1nk-bk-Mhi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B0X-Oo-ynN"/>
+                <constraint firstItem="1nk-bk-Mhi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="750" constant="6" id="CXb-Et-OWj"/>
                 <constraint firstItem="ghk-Dj-UdS" firstAttribute="centerY" secondItem="eeE-To-Ud3" secondAttribute="centerY" id="IXj-Cd-Klb"/>
                 <constraint firstItem="8Mf-er-at8" firstAttribute="centerY" secondItem="eeE-To-Ud3" secondAttribute="centerY" id="Mgd-eL-gTi"/>
                 <constraint firstItem="8Mf-er-at8" firstAttribute="trailing" secondItem="k2M-n2-HVw" secondAttribute="trailing" id="Myt-0Z-ooi"/>
                 <constraint firstItem="FEU-8h-7Mc" firstAttribute="leading" secondItem="k3c-Ke-jCb" secondAttribute="leading" id="N20-H7-j1z"/>
+                <constraint firstItem="86Q-rm-Du8" firstAttribute="height" secondItem="1nk-bk-Mhi" secondAttribute="height" id="OcS-qX-9lx"/>
+                <constraint firstItem="9UV-66-4qK" firstAttribute="height" secondItem="1nk-bk-Mhi" secondAttribute="height" id="TQO-17-sgz"/>
                 <constraint firstItem="8Mf-er-at8" firstAttribute="leading" secondItem="ghk-Dj-UdS" secondAttribute="trailing" constant="7" id="VHi-MM-KM5"/>
+                <constraint firstItem="1nk-bk-Mhi" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.215" id="XaO-LL-gcQ"/>
                 <constraint firstItem="9UV-66-4qK" firstAttribute="leading" secondItem="1nk-bk-Mhi" secondAttribute="leading" id="YR5-zn-Wvc"/>
                 <constraint firstItem="1nk-bk-Mhi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="acn-cs-fGM"/>
                 <constraint firstItem="eeE-To-Ud3" firstAttribute="top" secondItem="5An-V1-Tke" secondAttribute="bottom" constant="7" id="j7r-xe-J93"/>
                 <constraint firstItem="Che-pM-TsJ" firstAttribute="centerY" secondItem="eeE-To-Ud3" secondAttribute="centerY" id="kP7-WY-sCR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1nk-bk-Mhi" secondAttribute="trailing" constant="6" id="ljh-qf-YOr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1nk-bk-Mhi" secondAttribute="trailing" priority="750" constant="6" id="ljh-qf-YOr"/>
                 <constraint firstItem="eeE-To-Ud3" firstAttribute="trailing" secondItem="5An-V1-Tke" secondAttribute="trailing" id="m18-4z-35j"/>
                 <constraint firstItem="9UV-66-4qK" firstAttribute="top" secondItem="86Q-rm-Du8" secondAttribute="bottom" constant="7" id="tZK-bC-4CJ"/>
                 <constraint firstItem="86Q-rm-Du8" firstAttribute="trailing" secondItem="1nk-bk-Mhi" secondAttribute="trailing" id="uTN-ER-LZ8"/>
