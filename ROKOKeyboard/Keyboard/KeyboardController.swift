@@ -10,7 +10,7 @@ import Foundation
 
 let iPhoneHeight: CGFloat = 216.0
 let iPhoneFullHeight: CGFloat = 258.0
-let iPadHeight:CGFloat = 260.0
+let iPadHeight:CGFloat = 280.0
 let iPadFullHeight:CGFloat = 313.0
 
 protocol KeyboardController: class {

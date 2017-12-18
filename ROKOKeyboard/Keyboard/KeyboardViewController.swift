@@ -91,9 +91,7 @@ class KeyboardViewController: UIInputViewController {
         self.addChildViewController(keyboard)
         keyboard.configureKeyboard()
         
-        
         self.setHeight(keyboard.height)
-
     }
     
     func setHeight(_ height: CGFloat) {

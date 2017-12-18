@@ -19,6 +19,8 @@ class LettersViewController: UIViewController, KeyboardController {
         }
     }
     
+    @IBOutlet var twoLevelNamedButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +34,25 @@ class LettersViewController: UIViewController, KeyboardController {
     
     func configureKeyboard() {
         updateButtonsBackground(in: self.view)
+        updateTwoLevelNamedButtons()
+    }
+    
+    func updateTwoLevelNamedButtons() {
+        if twoLevelNamedButtons == nil {
+            return
+        }
+        for button in twoLevelNamedButtons {
+            button.titleLabel?.numberOfLines = 2
+            button.titleLabel?.lineBreakMode = .byWordWrapping
+            button.titleLabel?.textAlignment = .center
+            guard var buttonText = button.titleLabel?.text else {
+                continue
+            }
+            if buttonText.count > 1 {
+                buttonText.insert("\n", at: buttonText.index(after: buttonText.startIndex))
+            }
+            button.setTitle(buttonText, for: .normal)
+        }
     }
     
     func updateButtonsBackground(in view:UIView) {
@@ -48,6 +69,10 @@ class LettersViewController: UIViewController, KeyboardController {
             let image = initialImage?.resizableImage(withCapInsets: insets)
             button.setBackgroundImage(image, for: .normal)
         }
+    }
+    
+    @IBAction func removeKeyboardButtonPressed() {
+        self.keyboardController()?.dismissKeyboard()
     }
     
     @IBAction func emojiButtonPressed() {
@@ -75,10 +100,16 @@ class LettersViewController: UIViewController, KeyboardController {
     }
     
     @IBAction func letterButtonPressed(_ button: UIButton) {
-        guard let text = button.titleLabel?.text else {
+        guard let buttonText = button.titleLabel?.text else {
             return
         }
-        self.keyboardController()?.textDocumentProxy.insertText(text)
+        if buttonText.count < 3 {
+            self.keyboardController()?.textDocumentProxy.insertText(buttonText)
+        } else {
+            let index = buttonText.index(buttonText.startIndex, offsetBy: 2)
+            let text = shift ? buttonText[buttonText.startIndex] : buttonText[index]
+            self.keyboardController()?.textDocumentProxy.insertText("\(text)")
+        }
         self.shift = false
     }
     
