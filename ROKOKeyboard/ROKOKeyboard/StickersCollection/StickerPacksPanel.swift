@@ -49,6 +49,8 @@ class StickerPacksPanel: UIView {
         collectionView.frame = self.bounds
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = UIColor.clear
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         let nib = UINib(nibName: StickerPackIcon.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: StickerPackIcon.identifier)
         self.addSubview(collectionView)
