@@ -9,7 +9,7 @@
 import UIKit
 import ROKOMobi
 
-let stickerPackIconSize: CGFloat = 35.0
+let stickerPackIconSize: CGFloat = 30.0
 let stickerPackSpacing: CGFloat = 7.0
 
 protocol StickerPacksPanelDelegate: class {
@@ -49,6 +49,8 @@ class StickerPacksPanel: UIView {
         collectionView.frame = self.bounds
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = UIColor.clear
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         let nib = UINib(nibName: StickerPackIcon.identifier, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: StickerPackIcon.identifier)
         self.addSubview(collectionView)
